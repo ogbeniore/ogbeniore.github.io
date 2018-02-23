@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            overflow: none;
+        }
+        
+        body {
+            top: 0;
+            font-size: 1.25rem;
+            font-family: sans-serif;
+            line-height: 150%;
+            overflow: hidden;
+            margin: 0px;
+        }
+        
+        section {
+            color: #fff;
+            text-align: center;
+        }
+        
+        div {
+            height: 100%;
+        }
+        
+        article {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin: 0 0 0.75rem 0;
+        }
+        /* Pattern styles */
+        
+        .container {
+            display: table;
+            width: 100%;
+        }
+        
+        .left-half {
+            background-color: #cfdbeb;
+            position: absolute;
+            left: 0px;
+            width: 50%;
+        }
+        
+        .left-half>img {
+            height: 100% !important;
+        }
+        
+        .right-half {
+            background-color: #2a4086;
+            position: absolute;
+            right: 0px;
+            width: 50%;
+        }
+        
+        @media (max-width: 600px) {
+            .right-half {
+                width: 100%;
+                height: 50%;
+                bottom: 0;
+            }
+            .left-half {
+                top: 0;
+                width: 100%;
+                height: 50%;
+            }
+        }
+        
+        .icons {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .icons ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .icons ul li:last-child {
+            margin-right: 0;
+        }
+        
+        .icons li {
+            display: -webkit-inline-box;
+            padding-left: 5px;
+        }
+        
+        .icons ul li a {
+            color: #2a4086;
+            background-color: #00ffac;
+            height: 28px;
+            width: 28px;
+            line-height: 28px;
+            display: block;
+            font-size: 16px;
+            opacity: 0.8;
+            border-radius: 5px;
+        }
+        
+        .link {
+            color: #00ffac;
+            text-decoration: none;
+        }
+        
+        .icons ul li a:hover,
+        .link:hover {
+            opacity: 1;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oreoluwa Ojo | OgbeniOre</title>
+    <script src="https://use.fontawesome.com/1dbde377a5.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="left-half">
+            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1503153956/IMG_20170119_174852_589_qsoqaz.jpg" alt="ogbeniore-image">
+        </div>
+        <div class="right-half">
+            <article>
+                <div class="name">
+                    <h1>OJO OREOLUWA</h1>
+                </div>
+
+                <div class="icons">
+                    <ul>
+                        <li><a class="twitter" href="http://twitter.com/ogbeniore"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="facebook" href="http://facebook.com/ogbeniore"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="instagram" href="http://instagram.com/ogbeniore"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="github" href="http://github.com/ogbeniore"><i class="fa fa-github-alt"></i></a></li>
+                        <li><a class="website" href="http://ogbeniore.herokuapp.com"><i class="fa fa-globe"></i></a></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <p>I am a web developer based in nigeria.
+                        <br>I studied computer science in FUNAAB
+                        <br>I write HTML, CSS, JavaScript and VueJS
+						<br>Here is the <a class="link" href="http:github.com/OreoluwaOjo/HNG-Test">Link</a> to my resume</p>
+                </div>
+            </article>
+        </div>
+        </div>
+
+</body>
+
+</html>
