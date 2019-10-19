@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Projects Page</h1>
+    <h1>Coming Soon!</h1>
 
   </Layout>
 </template>

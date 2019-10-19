@@ -1,0 +1,25 @@
+$main-color: #091a28;
+$accent-color: #CCFFDD;
+$white: #FFFFFF;
+$main-color-faded: rgba( $main-color, .2 );
+$accent-color-faded: rgba( $accent-color, .2 );
+
+@mixin text($color) {
+  color: $color;
+}
+
+.text-main {
+  @include text($main-color);
+}
+.text-accent {
+  @include text($accent-color);
+}
+.text-main-faded {
+  @include text($main-color-faded);
+}
+.text-accent-faded {
+  @include text($accent-color-faded);
+}
+.text-white {
+  @include text($white)
+}
