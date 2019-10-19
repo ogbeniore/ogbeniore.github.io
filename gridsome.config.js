@@ -9,14 +9,16 @@ module.exports = {
   plugins: [
     {
       use: 'gridsome-plugin-pwa',
-      title: 'Oreoluwa',
-      startUrl: '/',
-      display: 'standalone',
-      statusBarStyle: 'default',
-      shortName: 'Oreoluwa',
-      themeColor: '#0D2538',
-      backgroundColor: '#0D2538',
-      icon: 'images/favicon.png'
+      options: {
+        title: 'Oreoluwa',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        shortName: 'Oreoluwa',
+        themeColor: '#0D2538',
+        backgroundColor: '#0D2538',
+        icon: 'src/favicon.png'
+      }
     }
   ]
 }
