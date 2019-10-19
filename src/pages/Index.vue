@@ -14,5 +14,6 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+  cursor: pointer;
 }
 </style>
