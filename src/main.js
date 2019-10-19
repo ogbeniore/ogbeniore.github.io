@@ -6,7 +6,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  
+
   head.meta.push({
     name: 'keywords',
     content: 'Oreoluwa, Software Engineer, Nigeria, Developer, Oreoluwa Ojo'
@@ -29,7 +29,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'apple-mobile-web-app-status-bar-style',
-    content: '#0D2538'
+    content: 'black-translucent'
   })
 
   head.meta.push({
@@ -81,4 +81,50 @@ export default function (Vue, { router, head, isClient }) {
     name: 'twitter:image',
     content: 'https://res.cloudinary.com/plushdeveloper/image/upload/v1571498243/twitter_image_iqzuir.png'
   })
+  head.meta.push({
+    name: 'theme-color',
+    content: '#0D2538'
+  })
+  head.meta.push({
+    href: '/images/iphone5_splash.png',
+    media: '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)',
+    rel: 'apple-touch-startup-image'
+  })
+
+  head.meta.push({
+    href: '/images/iphone6_splash.png',
+    media: '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)',
+    rel: 'apple-touch-startup-image'
+  })
+
+  head.meta.push({
+    href: '/images/iphoneplus_splash.png',
+    media: '(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)',
+    rel: 'apple-touch-startup-image'
+  })
+
+  head.meta.push({
+    href: '/images/iphonex_splash.png',
+    media: '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)',
+    rel: 'apple-touch-startup-image'
+  })
+
+  head.meta.push({
+    href: '/images/iphonexr_splash.png',
+    media: '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)',
+    rel: 'apple-touch-startup-image'
+  })
+
+  head.meta.push({
+    href: '/images/iphonexsmax_splash.png',
+    media: '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)',
+    rel: 'apple-touch-startup-image'
+  })
+
+  head.meta.push({
+    href: '/images/ipad_splash.png',
+    media: '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 3)',
+    rel: 'apple-touch-startup-image'
+  })
+
 }
