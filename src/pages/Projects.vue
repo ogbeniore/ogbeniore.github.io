@@ -1,17 +1,19 @@
 <template>
   <Layout>
-
-    <h1>Home page</h1>
+    <h1>Projects Page</h1>
 
   </Layout>
 </template>
 
 <script>
 export default {
+  metaInfo: {
+    title: 'Projects'
+  }
 }
 </script>
 
-<style>
+<style lang="scss">
 .home-links a {
   margin-right: 1rem;
 }
