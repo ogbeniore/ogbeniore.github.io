@@ -227,13 +227,14 @@ export default {
       a {
         position: relative;
         transition: color 300ms ease-in-out;
+        padding-bottom: 1rem;
         &:after {
           content: '';
           height: 0.5rem;
           width: 100%;
           background: $main-color-faded;
           position: absolute;
-          bottom: -40%;
+          bottom: 0;
           left: 0;
           border-radius: 1rem;
           transition: background-color 300ms ease-in-out;
