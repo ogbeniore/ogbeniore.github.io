@@ -8,7 +8,7 @@
             Send me a message and I’ll reply as soon as possible
           </p>
           <div class="contact__form">
-            <form name="contact-form" method="post" v-on:submit.prevent="handleSubmit" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact-form" method="post" v-on:submit.prevent="handleSubmit" action="/" data-netlify="true" data-netlify-honeypot="bot-field">
               <div class="contact__form__input">
                 <input type="name" name="name" id="name" placeholder="Name" v-model="formData.name" />
               </div>
@@ -24,26 +24,19 @@
         </div>
       </div>
     </div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list__item">
-          <g-link to="/" active-class="active" exact>About me</g-link>
-        </li>
-        <li class="navigation__list__item">
-          <g-link to="/projects" active-class="active">Projects</g-link>
-        </li>
-        <li class="navigation__list__item">
-          <g-link to="/contact" active-class="active">Talk to me</g-link>
-        </li>
-      </ul>
-    </nav>
+    <Navigation />
   </Layout>
 </template>
 
 <script>
+import Navigation from '~/components/Navigation.vue'
+
 export default {
   metaInfo: {
     title: 'Talk to me'
+  },
+  components: {
+    Navigation
   },
   data() {
     return {
@@ -65,14 +58,14 @@ export default {
           ...this.formData,
         }),
       })
-      .then(() => this.$router.push('/success'))
+      .then(() => this.$router.push('/'))
       .catch(error => alert(error))
     }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '~/assets/scss/main.scss';
 .contact {
   background: $accent-color;
@@ -106,6 +99,9 @@ export default {
     right: 0;
     animation-direction: reverse;
     animation-iteration-count: infinite;
+    @media screen and (max-width: 600px) {
+      animation-direction: normal;
+    }
   }
   &__content {
     max-width: 800px;
@@ -145,6 +141,9 @@ export default {
     animation-fill-mode: forwards;
     &__input {
       margin: 3rem 2rem;
+      @media screen and (max-width: 600px) {
+        margin: 3rem 5rem;
+      }
       input,
       textarea,
       input:-webkit-autofill,
@@ -186,80 +185,11 @@ export default {
       font-size: 2rem;
       border: none;
       transition: background 300ms ease-in-out;
+      cursor: pointer;
       &:hover {
         background: $main-color-faded;
       }
     }
-  }
-}
-.navigation {
-  position: absolute;
-  bottom: 2rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  z-index: 2;
-  opacity: 0;
-  animation-duration: 1000ms;
-  animation-name: slideup;
-  animation-timing-function: ease-in;
-  animation-delay: 2000ms;
-  animation-fill-mode: forwards;
-  &__list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    &__item {
-      color: $main-color-faded;
-      padding: 1rem 2rem;
-      font-size: 2rem;
-      a {
-        position: relative;
-        transition: color 300ms ease-in-out;
-        &:after {
-          content: '';
-          height: 0.5rem;
-          width: 100%;
-          background: $main-color-faded;
-          position: absolute;
-          bottom: -40%;
-          left: 0;
-          border-radius: 1rem;
-          transition: background-color 300ms ease-in-out;
-
-        }
-        &.active,
-        &:hover {
-          color: $main-color;
-          &:after {
-            background-color: $main-color;
-          }
-          &:hover {
-            color: $accent-color;
-            &:after {
-              transition: height 300ms ease-in-out;
-              height: 4rem;
-              width: 120%;
-              left: -10%;
-              z-index: -1;
-              border-radius: 0;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@keyframes slideup {
-  from { 
-    opacity: 0;
-    transform: translateY(20%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 </style>

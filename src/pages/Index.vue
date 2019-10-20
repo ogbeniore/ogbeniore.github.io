@@ -8,31 +8,23 @@
           <a href="https://enyata.com" target="_blank" rel="noopener"  class="text-accent">Enyata</a>.
           Most of the time i work on consumer facing part of a software software using tools like CSS, 
           Javascript, Vue and React, and in a situation where i want to build the non consumer facing 
-          part i use tools like Node.js and Go programming language.
+          part i use tools like Node.js.
         </p>
       </div>
     </div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list__item">
-          <g-link to="/" active-class="active">About me</g-link>
-        </li>
-        <li class="navigation__list__item">
-          <g-link to="/projects" active-class="active">Projects</g-link>
-        </li>
-        <li class="navigation__list__item">
-          <g-link to="/contact" active-class="active">Talk to me</g-link>
-        </li>
-      </ul>
-    </nav>
+    <Navigation light="true" />
   </Layout>
 </template>
 
 <script>
+import Navigation from '~/components/Navigation.vue'
 export default {
   metaInfo: {
     title: 'Home'
-  }
+  },
+  components: {
+    Navigation
+  },
 }
 </script>
 
@@ -71,6 +63,9 @@ export default {
     right: 0;
     animation-direction: reverse;
     animation-iteration-count: infinite;
+    @media screen and (max-width: 600px) {
+      animation-direction: normal;
+    }
   }
   &__content {
     max-width: 800px;
@@ -93,76 +88,6 @@ export default {
       animation-delay: 500ms;
       animation-fill-mode: forwards;
     }
-  }
-}
-.navigation {
-  position: absolute;
-  bottom: 3rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  z-index: 2;
-  opacity: 0;
-  animation-duration: 1000ms;
-  animation-name: slideup;
-  animation-timing-function: ease-in;
-  animation-delay: 2000ms;
-  animation-fill-mode: forwards;
-  &__list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    &__item {
-      color: $accent-color-faded;
-      padding: 1rem 2rem;
-      font-size: 2rem;
-      a {
-        position: relative;
-        transition: color 300ms ease-in-out;
-        &:after {
-          content: '';
-          height: 0.5rem;
-          width: 100%;
-          background: $accent-color-faded;
-          position: absolute;
-          bottom: -40%;
-          left: 0;
-          border-radius: 1rem;
-          transition: background-color 300ms ease-in-out;
-
-        }
-        &.active,
-        &:hover {
-          color: $accent-color;
-          &:after {
-            background-color: $accent-color;
-          }
-          &:hover {
-            color: $main-color;
-            &:after {
-              transition: height 300ms ease-in-out;
-              height: 4rem;
-              width: 120%;
-              left: -10%;
-              z-index: -1;
-              border-radius: 0;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@keyframes slideup {
-  from { 
-    opacity: 0;
-    transform: translateY(20%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 a.text-accent {
