@@ -1,6 +1,5 @@
 <template>
   <Layout>
-
     <div class="about">
       <div class="about__content">
         <h1 class="about__content__header">Hi, I'm <span class="text-accent">Oreoluwa</span></h1>
@@ -26,7 +25,6 @@
         </li>
       </ul>
     </nav>
-
   </Layout>
 </template>
 
@@ -82,6 +80,7 @@ export default {
     text-align: center;
     &__header {
       color: $white;
+      margin-top: 0.5rem;
     }
     &__body {
       font-size: 3rem;
