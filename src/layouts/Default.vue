@@ -29,13 +29,14 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Squad",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: "Squad",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
   padding:0;
   line-height: 1.5;;
   min-height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  background: #091a28;
 }
 h1 {
 	font-size: 5rem;
@@ -57,7 +58,14 @@ button:focus-within {
 }
 
 .fade-enter {
-  transform: translateX(20%);
+  transform: translateY(100%);
+}
+.fade-leave-active {
+  transition: transform .5s;
+}
+
+.fade-leave {
+  transform: translateY(-100%);
 }
 @media screen and (max-width: 768px) {
   html {
