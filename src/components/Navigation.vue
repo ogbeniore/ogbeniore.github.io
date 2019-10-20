@@ -1,5 +1,5 @@
 <template>
-  <nav class="navigation" :class="{light: light}">
+  <nav class="navigation" :class="{light: light, half: half}">
     <ul class="navigation__list">
       <li class="navigation__list__item">
         <g-link to="/" active-class="active" exact>About me</g-link>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  props: ['light']
+  props: ['light', 'half']
 }
 </script>
 
@@ -101,6 +101,32 @@ export default {
           &:hover {
             color: $main-color;
           }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 600px) {
+    &.half {
+      .navigation__list__item {
+        &:first-of-type {
+          color: $accent-color-faded;
+          a {
+            &:after {
+              background: $accent-color-faded;
+            }
+            &:hover {
+              color: $accent-color;
+              &:after {
+                background-color: $accent-color;
+              }
+              &:hover {
+                color: $main-color;
+              }
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          display: none;
         }
       }
     }

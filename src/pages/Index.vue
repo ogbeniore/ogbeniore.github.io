@@ -8,7 +8,7 @@
           <a href="https://enyata.com" target="_blank" rel="noopener"  class="text-accent">Enyata</a>.
           Most of the time i work on consumer facing part of a software software using tools like CSS, 
           Javascript, Vue and React, and in a situation where i want to build the non consumer facing 
-          part i use tools like Node.js and Go programming language.
+          part i use tools like Node.js.
         </p>
       </div>
     </div>
