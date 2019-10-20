@@ -71,6 +71,9 @@ export default {
     right: 0;
     animation-direction: reverse;
     animation-iteration-count: infinite;
+    @media screen and (max-width: 600px) {
+      animation-direction: normal;
+    }
   }
   &__content {
     max-width: 800px;
@@ -118,6 +121,9 @@ export default {
       color: $accent-color-faded;
       padding: 1rem 2rem;
       font-size: 2rem;
+      @media screen and (max-width: 600px) {
+        font-size: 2.5rem;
+      }
       a {
         position: relative;
         transition: color 300ms ease-in-out;

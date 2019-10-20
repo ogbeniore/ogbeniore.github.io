@@ -8,7 +8,7 @@
             Send me a message and I’ll reply as soon as possible
           </p>
           <div class="contact__form">
-            <form name="contact-form" method="post" v-on:submit.prevent="handleSubmit" action="/success/" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact-form" method="post" v-on:submit.prevent="handleSubmit" action="/" data-netlify="true" data-netlify-honeypot="bot-field">
               <div class="contact__form__input">
                 <input type="name" name="name" id="name" placeholder="Name" v-model="formData.name" />
               </div>
@@ -65,7 +65,7 @@ export default {
           ...this.formData,
         }),
       })
-      .then(() => this.$router.push('/success'))
+      .then(() => this.$router.push('/'))
       .catch(error => alert(error))
     }
   }
@@ -106,6 +106,9 @@ export default {
     right: 0;
     animation-direction: reverse;
     animation-iteration-count: infinite;
+    @media screen and (max-width: 600px) {
+      animation-direction: normal;
+    }
   }
   &__content {
     max-width: 800px;
@@ -145,6 +148,9 @@ export default {
     animation-fill-mode: forwards;
     &__input {
       margin: 3rem 2rem;
+      @media screen and (max-width: 600px) {
+        margin: 3rem 5rem;
+      }
       input,
       textarea,
       input:-webkit-autofill,
@@ -215,6 +221,9 @@ export default {
       color: $main-color-faded;
       padding: 1rem 2rem;
       font-size: 2rem;
+      @media screen and (max-width: 600px) {
+        font-size: 2.5rem;
+      }
       a {
         position: relative;
         transition: color 300ms ease-in-out;
