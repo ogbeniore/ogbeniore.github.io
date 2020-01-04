@@ -4,7 +4,7 @@
       <div class="about__content">
         <h1 class="about__content__header">Hi, I'm <span class="text-accent">Oreoluwa</span></h1>
         <p class="about__content__body text-white">
-          I am a Software engineer currently at 
+          I am a Frontend Engineer currently at 
           <a href="https://enyata.com" target="_blank" rel="noopener"  class="text-accent">Enyata</a>.
           I like looking at and building beautiful functional designs using web technologies.
           You can check out my <a href="https://twitter.com/ogbeniore" target="_blank" rel="noopener"  class="text-accent">Twitter</a>, <a href="https://github.com/ogbeniore" target="_blank" rel="noopener"  class="text-accent">Github</a>, or shoot me an <a href="mailto:me@oreoluwa.dev" target="_blank" rel="noopener"  class="text-accent">email</a>.
