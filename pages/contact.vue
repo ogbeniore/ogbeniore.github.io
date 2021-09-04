@@ -1,7 +1,7 @@
 <template>
   <main class="container text-center">
     <figure class="image-card">
-      <img src="~/assets/ogbeniore-happy-memoji.png" alt="A cartoon representation of Oreoluwa Ojo blowing a party balloon">
+      <img src="/ogbeniore-happy-memoji.png" alt="A cartoon representation of Oreoluwa Ojo blowing a party balloon">
     </figure>
     <h1>Let’s Talk</h1>
     <p>

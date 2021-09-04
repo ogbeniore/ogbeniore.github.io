@@ -1,7 +1,7 @@
 <template>
   <main class="container text-center">
     <figure class="image-card">
-      <img src="~/assets/ogbeniore-memoji.png" alt="A cartoon representation of Oreoluwa Ojo winkin">
+      <img src="/ogbeniore-memoji.png" alt="A cartoon representation of Oreoluwa Ojo winkin">
     </figure>
     <h1>Hi, I'm Oreoluwa</h1>
     <p>
