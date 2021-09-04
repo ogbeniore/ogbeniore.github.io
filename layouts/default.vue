@@ -9,7 +9,7 @@
 @import '@/assets/main';
 html {
   font-size: 10px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 *,
 *::before,
@@ -41,14 +41,73 @@ a {
   color: inherit;
   text-decoration: none;
   font-size: inherit;
-  a:hover,
-  a:active,
-  a:visited {
-    color: inherit;
+  transition: all 300ms ease-in-out;
+  &:hover,
+  &:active {
+    color: $purple;
     text-decoration: initial;
   }
 }
 button {
   cursor: pointer;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 5.2rem;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  @include mq('md') {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+  }
+}
+p {
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  @include mq('md') {
+    font-size: 1.8rem;
+  }
+  @include mq('lg') {
+    font-size: 2.1rem;
+    line-height: 4rem;
+  }
+}
+
+.container {
+  max-width: 84rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  margin-top: 5.2rem;
+  margin-top: 2.6rem;
+  background: $dark;
+  color: $light;
+  padding: 1.6rem 7rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 3.6rem;
+  &:hover {
+    background: $purple;
+  }
+}
+footer {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  margin-top: 5.2rem;
+  a {
+    margin: 0 1.3rem;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    @include mq('md') {
+      font-size: 1.8rem;
+    }
+  }
 }
 </style>

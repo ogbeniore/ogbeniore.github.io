@@ -73,11 +73,13 @@ export default {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding-top: 2rem;
   position: relative;
   align-items: center;
+  padding-bottom: 10.4rem;
   @include mq('md') {
-    padding: 3.6rem 0;
+    padding-bottom: 5.2rem;
+    padding-top: 3.6rem;
   }
   &__menu {
     visibility: hidden;
@@ -121,6 +123,16 @@ export default {
       ul {
         text-align: center;
         flex-direction: column;
+      }
+      @include mq('md') {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        border: none;
+        ul {
+          flex-direction: row;
+          display: flex;
+        }
       }
     }
     @include mq('md') {
