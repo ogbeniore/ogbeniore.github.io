@@ -87,12 +87,15 @@ p {
   margin-top: 2.6rem;
   background: $dark;
   color: $light;
-  padding: 1.6rem 7rem;
+  padding: 1.6rem;
   font-size: 1.6rem;
   line-height: 2.4rem;
   border: none;
   text-transform: uppercase;
   border-radius: 3.6rem;
+  max-width: 26.4rem;
+  width: 100%;
+  margin-bottom: 2.6rem;
   &:hover {
     background: $purple;
   }
@@ -101,6 +104,7 @@ footer {
   font-size: 1.8rem;
   line-height: 2.1rem;
   margin-top: 5.2rem;
+  margin-bottom: 5.2rem;
   a {
     margin: 0 1.3rem;
     font-size: 1.4rem;
