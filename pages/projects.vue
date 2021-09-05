@@ -91,7 +91,10 @@ export default {
         isMobile: true
       }
     ]
-  })
+  }),
+  head: {
+    title: 'Projects'
+  }
 }
 </script>
 

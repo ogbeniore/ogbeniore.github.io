@@ -15,6 +15,13 @@
     </footer>
   </main>
 </template>
+<script>
+export default {
+  head: {
+    title: 'Let\'s Talk'
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import '@/assets/main';

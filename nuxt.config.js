@@ -4,14 +4,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'oreoluwa',
+    title: 'Oreoluwa Ojo',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Oreoluwa Ojo is a Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Vue.js, ReactJS HTML, Web Development' },
+      { name: 'keywords', content: 'Oreoluwa, Oreoluwa Ojo, Ogbeniore, Software Engineer, Frontend Engineer, Vue, React, Developer' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
