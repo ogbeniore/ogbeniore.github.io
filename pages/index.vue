@@ -5,7 +5,7 @@
     </figure>
     <h1>Hi, I'm Oreoluwa</h1>
     <p>
-      a <b>Software Engineer</b> based in Lagos, Nigeria. <br>
+      a <b>Software Engineer</b> based in Munich, Germany. <br>
       Solving problems via the web using technologies like HTML, CSS, Javascript, Vue and React, bridging the gap, between functionality and aesthetics.
     </p>
     <nuxt-link tag="button" class="btn" to="/contact">
