@@ -35,11 +35,11 @@
             About
           </nuxt-link>
         </li>
-        <li class="nav__menu-item">
+        <!-- <li class="nav__menu-item">
           <nuxt-link to="/projects">
             Projects
           </nuxt-link>
-        </li>
+        </li> -->
         <li class="nav__menu-item">
           <a href="https://bit.ly/ogbeniore-resume" target="_blank" rel="noopener noreferrer">
             Resume
