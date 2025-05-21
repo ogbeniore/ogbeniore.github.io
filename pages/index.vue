@@ -5,8 +5,8 @@
     </figure>
     <h1>Hi, I'm Oreoluwa</h1>
     <p>
-      a <b>Software Engineer</b> based in Munich, Germany. <br>
-      Solving problems via the web using technologies like HTML, CSS, Javascript, Vue and React, bridging the gap, between functionality and aesthetics.
+      a <b>Senior Frontend Engineer</b>. <br>
+      I build fast, beautiful, and scalable web applications by blending clean architecture with elegant UI. With deep experience in fintech, product-led teams, and modern stacks like Vue, React, and TypeScript, I bridge design and engineering to deliver impact. I’ve led teams, built design systems from scratch, and shipped user-first features at scale.
     </p>
     <nuxt-link tag="button" class="btn" to="/contact">
       connect with me
