@@ -41,7 +41,7 @@
           </nuxt-link>
         </li> -->
         <li class="nav__menu-item">
-          <a href="https://bit.ly/ogbeniore-resume" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1yce7JQ947ltF5VYYOXdzY1vaEJXZTEud/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </li>
@@ -69,7 +69,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/main';
+@use '@/assets/main' as *;
 .nav {
   display: flex;
   justify-content: space-between;

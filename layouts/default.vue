@@ -6,7 +6,7 @@
 </template>
 
 <style lang="scss">
-@import '@/assets/main';
+@use '@/assets/main' as *;
 html {
   font-size: 10px;
   font-family: 'Ubuntu', sans-serif;

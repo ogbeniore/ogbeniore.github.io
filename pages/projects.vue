@@ -99,7 +99,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/main';
+@use '@/assets/main' as *;
 $single: 2.6rem;
 .container {
   max-width: 100rem;

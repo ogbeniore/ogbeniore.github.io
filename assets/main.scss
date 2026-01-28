@@ -8,11 +8,13 @@ $dark: #0E0E0E !default;
 $purple: #A6A3D0 !default;
 $light: #FFFFFF !default;
 
+@use "sass:map";
+
 @mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
   // If $mq-breakpoint is a key that exists in
   // $mq-breakpoints, get and use the value
-  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
-    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+  @if map.has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map.get($mq-breakpoints, $mq-breakpoint);
   }
 
   @media screen and (min-width: #{$mq-breakpoint}) {

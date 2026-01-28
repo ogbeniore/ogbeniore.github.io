@@ -91,3 +91,4 @@ sw.*
 
 # Yarn lock
 *yarn.lock
+*-lock.json
